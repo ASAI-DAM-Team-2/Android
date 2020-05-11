@@ -1,5 +1,6 @@
 package com.example.welcomepage
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,5 +17,12 @@ class MainActivity : AppCompatActivity() {
             val intentGoToWelcomePage = Intent(this, WelcomePage::class.java)
             startActivity(intentGoToWelcomePage)
         }
+
+        registerButton.setOnClickListener{
+            val intentGoToRegisterPage = Intent(this, RegisterActivity::class.java)
+            startActivity(intentGoToRegisterPage)
+        }
+
+
     }
 }
