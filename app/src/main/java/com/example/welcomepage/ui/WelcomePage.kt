@@ -1,4 +1,4 @@
-package com.example.welcomepage
+package com.example.welcomepage.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,8 @@ import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.FragmentTransaction
+import com.example.welcomepage.R
+import com.example.welcomepage.ui.dishes.DishesFragment
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_welcome_page.*
 import kotlinx.android.synthetic.main.app_bar_main.*
