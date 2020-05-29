@@ -1,10 +1,10 @@
-package com.example.welcomepage
+package com.example.welcomepage.ui
 
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import com.example.welcomepage.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
