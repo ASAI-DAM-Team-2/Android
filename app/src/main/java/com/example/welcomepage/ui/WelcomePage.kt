@@ -8,6 +8,7 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.FragmentTransaction
 import com.example.welcomepage.R
 import com.example.welcomepage.ui.dishes.DishesFragment
+import com.example.welcomepage.ui.restaurants.RestaurantsFragment
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_welcome_page.*
 import kotlinx.android.synthetic.main.app_bar_main.*
@@ -17,6 +18,7 @@ class WelcomePage : AppCompatActivity(), NavigationView.OnNavigationItemSelected
     lateinit var homeFragment: HomeFragment
     lateinit var dishesFragment: DishesFragment
     lateinit var settingsFragment: SettingsFragment
+    lateinit var restaurantsFragment: RestaurantsFragment
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,6 +65,14 @@ class WelcomePage : AppCompatActivity(), NavigationView.OnNavigationItemSelected
                 supportFragmentManager
                     .beginTransaction()
                     .replace(R.id.frame_layout, dishesFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    .commit()
+            }
+            R.id.restaurants -> {
+                restaurantsFragment = RestaurantsFragment()
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frame_layout, restaurantsFragment)
                     .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                     .commit()
             }
