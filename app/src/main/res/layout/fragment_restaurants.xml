@@ -24,7 +24,7 @@
 
 
         <ImageView
-            android:id="@+id/restaurant_img"
+            android:id="@+id/restaurantImage"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
@@ -33,16 +33,16 @@
             android:src="@drawable/logo_meal" />
 
         <TextView
-            android:id="@+id/restaurant_name"
+            android:id="@+id/restaurantName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Restaurant_Name"
+            android:text="Restaurants fragment"
             android:textSize="28sp"
             android:textStyle="bold" />
 
 
         <TextView
-            android:id="@+id/address"
+            android:id="@+id/restaurantAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
